@@ -7,7 +7,7 @@ Date  : 2021-07-04
 DESC  :
 """
 import numpy as np
-import fluidplasma as fp
+from .periodic_boundary import periodic_boundary
 
 
 def gaussian(x: float, a, l0, c):
@@ -39,5 +39,5 @@ def gaussian(x: float, a, l0, c):
         p = ((x[i] - c) / l0) ** 2
         y[i] = a * np.exp(-1 * p)
 
-    y = fp.periodic_boundary(y)
+    y = periodic_boundary(y)
     return y
