@@ -12,7 +12,7 @@ from .periodic_boundary import periodic_boundary
 from .filter3p import filter3p
 
 
-def poissons_solution(x, z, k, dx, w, tol):
+def poissons_solution(x: float, z:float, k, dx, w, tol):
     """
 
     :param x: Electrostatic potential
@@ -27,8 +27,8 @@ def poissons_solution(x, z, k, dx, w, tol):
     pp = 2.0
 
     while pp > tol:
-        xold = x
-        for i in range(3, max(x.shape) - 3):
+        xold = np.array(x, dtype='float32')
+        for i in range(2, max(x.shape) - 3):
             po = 0.5 * (x[i + 1] + x[i - 1]
                         + (z[i] - kappa_density(x[i], k)) * dx * dx)
             x[i] = po + w * (po - xold[i])
@@ -39,4 +39,5 @@ def poissons_solution(x, z, k, dx, w, tol):
         pp = np.max(diff)
 
     x = filter3p(x)
+    #print("%10.3E" % (pp))
     return x
