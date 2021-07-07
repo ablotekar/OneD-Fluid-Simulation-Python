@@ -15,7 +15,7 @@ def filter3p(z):
     :param z:
     :return:
     """
-    for i in range(3, max(z.shape) - 3):
+    for i in range(2, max(z.shape) - 3):
         z[i] = (-1 * z[i - 2] + 4 * z[i - 1] + 10 * z[i]
                 + 4 * z[i + 1] - z[i + 2]) / 16
     z = periodic_boundary(z)
