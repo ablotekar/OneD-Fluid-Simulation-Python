@@ -23,12 +23,12 @@ ne0 = 1.0  # Equilibrium electron density
 ni0 = 1.0  # Equilibrium ion density
 nx = int(lx / dx)  # Number of grid points
 x0 = 0.5 * nx * dx  # Position of the perturbation
-wd = 5  # Width of the perturbation
+wd = 2  # Width of the perturbation
 a0 = 0.5  # Amplitude of perturbation (same in this case)
 kp = 2
 w = 0.70
-tol = 1.e-10
-ntime = 1000000
+tol = 1.e-7
+ntime = 5000
 
 nx4 = nx + 4
 
@@ -39,11 +39,11 @@ x[-1] = 0.0
 x[-2] = 0.0
 
 # Initializing variables
-ne = np.zeros((nx4, 2))  # Electron density
-ni = np.zeros((nx4, 2))  # Ion density
-vi = np.zeros((nx4, 2))  # Ion velocity
-ph = np.zeros((nx4, 2))  # Electrostatic potential
-Ex = np.zeros((nx4, 1))  # Electric field
+ne = np.array(np.zeros((nx4, 2)), dtype='float32') # Electron density
+ni = np.array(np.zeros((nx4, 2)), dtype='float32')  # Ion density
+vi = np.array(np.zeros((nx4, 2)), dtype='float32')  # Ion velocity
+ph = np.array(np.zeros((nx4, 2)), dtype='float32')  # Electrostatic potential
+Ex = np.array(np.zeros((nx4, 1)), dtype='float32')  # Electric field
 
 # Perturbing system
 ne[:, 0] = 1 + fp.gaussian(x, a0, wd, x0)
@@ -70,18 +70,20 @@ for j in range(0, ntime):
     vi, ni = fp.continuity_equation(vi, ni, ph, 1, dx, dt)
     # Poisson's equation solution (kappa density)
     ph[:, 1] = fp.poissons_solution(ph[:, 1], ni[:, 1], kp, dx, w, tol)
+    ph[:, 0] = ph[:, 1]
 
     # Continuity equation
     vi, ni = fp.continuity_equation(vi, ni, ph, 0, dx, dt)
     # Poisson's equation solution (kappa density)
     ph[:, 0] = fp.poissons_solution(ph[:, 0], ni[:, 0], kp, dx, w, tol)
+    ph[:, 1] = ph[:, 0]
 
     # Plot the results
     # line1.set_ydata(ph[2:nx4 - 3, 0])
     # figure.canvas.draw()
     # figure.canvas.flush_events()
 
-    if np.mod(j, 100) == 0:
+    if np.mod(j, 50) == 0:
         # TODO: Need to find way to reused same figure window
         plt.plot(x[2:nx4 - 3], ph[2:nx4 - 3, 0])
         # plt.xlim(400, 600)
