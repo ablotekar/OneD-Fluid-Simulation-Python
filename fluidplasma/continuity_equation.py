@@ -24,11 +24,11 @@ def continuity_equation(x, y, z, ic, dx, dt):
             time step
     """
     jc = 1 - ic # Previous time index
-    fd0 = fd4(x[:, ic], dx)
-    fd1 = fd4(y[:, ic], dx)
-    fd2 = fd4(z[:, ic], dx)
+    fd0 = fd4(x[:, jc], dx)
+    fd1 = fd4(y[:, jc], dx)
+    fd2 = fd4(z[:, jc], dx)
 
-    for i in range(3, max(x.shape) - 3):
+    for i in range(2, max(x.shape) - 3):
         y[i, ic] = y[i, ic] - dt * (y[i, jc] * fd0[i] - x[i, jc] * fd1[i])
         x[i, ic] = x[i, ic] - dt * (x[i, jc] * fd0[i] + fd2[i])
 
