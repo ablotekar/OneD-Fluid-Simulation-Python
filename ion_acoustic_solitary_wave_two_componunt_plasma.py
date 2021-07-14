@@ -58,7 +58,7 @@ for i in range(3, nx4 - 3):
 ph[:, 1] = ph[:, 0]
 
 for j in range(0, ntime):
-    # TODO: small numerical error still there neeed to remove
+    # TODO: small numerical error still there. Neeed to remove
     # Continuity equation
     vi, ni = fp.continuity_equation(vi, ni, ph, 1, dx, dt)
     # Poisson's equation solution (kappa density)
@@ -74,6 +74,7 @@ for j in range(0, ntime):
     # Plotting or saving the result
     if np.mod(j, 50) == 0:
         # TODO: Need to find way to reused same figure window
+        # TODO: Better to save figure rather than displaying
         plt.plot(x[2:nx4 - 3], ph[2:nx4 - 3, 0])
         # plt.xlim(400, 600)
         # plt.ylim(-2, 2)
