@@ -32,5 +32,5 @@ superthermal electron
 
 
 
-Note: The orignal code was written in fortran, soon will I will upload it
+Note: The orignal code was written in fortran, soon I will upload it
 to github 
