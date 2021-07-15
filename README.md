@@ -18,7 +18,7 @@ writing code for particular plasma system.
 
 ## Fluid simulation codes 
 
-The fluid simuation codes are written by using the different useful function from
+The fluid simulation codes are written by using the different useful function from
 package **"fluidplasma"**. In the following subsections, the information of
 of some codes is give. 
 
@@ -29,11 +29,11 @@ superthermal electron
 
 ![wkplot](./figures/wkplot.png)
 
-(Figure shows the wk (frequency-wavenumber) plot genrated from the output of the above
+(Figure shows the wk (frequency-wavenumber) plot generated from the output of the above
 mentioned code.)
 
 
 
 
-Note: The orignal code was written in fortran, soon I will upload it
-to github 
+Note: The original code is written in fortran, soon I will upload it
+to GitHub 
