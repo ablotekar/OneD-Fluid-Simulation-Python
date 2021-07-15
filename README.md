@@ -22,6 +22,10 @@ The fluid simuation codes are written by using the different useful function fro
 package **"fluidplasma"**. In the following subsections, the information of
 of some codes is give. 
 
+![wkplot](./figures/wkplot.png)
+(Figure shows the wk (frequency-wavenumber) plot genrated from the output of the above
+mentioned code.)
+
 ### Ion acoustic solitary wave simulation 
 In the package script **"ion_acoustic_solitary_wave_two_componunt_plasma.py"** simulate
 ion acoustic solitary wave in the plasma which consist of the fluid ion and 
