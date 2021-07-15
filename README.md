@@ -23,6 +23,7 @@ package **"fluidplasma"**. In the following subsections, the information of
 of some codes is give. 
 
 ![wkplot](./figures/wkplot.png)
+
 (Figure shows the wk (frequency-wavenumber) plot genrated from the output of the above
 mentioned code.)
 
