@@ -19,7 +19,7 @@ writing code for particular plasma system.
 ## Fluid simulation codes 
 
 The fluid simulation codes are written by using the different useful function from
-package **"fluidplasma"**. In the following subsections, the information
+package **"fluidplasma"**. In the following subsections, the information of
 of some codes is give. 
 
 ### Ion acoustic solitary wave simulation 
@@ -29,6 +29,13 @@ superthermal electron
 
 ![wkplot](./figures/wkplot.png)
 
-(Figure shows the wk (frequency-wavenumber) plot generated from the output of the above
-mentioned code.)
+(Figure shows the wk (frequency-wavenumber) plot generated from the output)
 
+
+
+## Credits
+      
+This software was developed by Ajay Lotekar ([ablotekar@gmail.com](ablotekar@gmail.com))
+during PhD.
+
+1D fluid simulation code to study the plasma waves in the different plasma environment. 
