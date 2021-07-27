@@ -32,8 +32,3 @@ superthermal electron
 (Figure shows the wk (frequency-wavenumber) plot generated from the output of the above
 mentioned code.)
 
-
-
-
-Note: The original code is written in fortran, soon I will upload it
-to GitHub 
