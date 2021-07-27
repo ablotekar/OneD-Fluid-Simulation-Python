@@ -19,7 +19,7 @@ writing code for particular plasma system.
 ## Fluid simulation codes 
 
 The fluid simulation codes are written by using the different useful function from
-package **"fluidplasma"**. In the following subsections, the information of
+package **"fluidplasma"**. In the following subsections, the information
 of some codes is give. 
 
 ### Ion acoustic solitary wave simulation 
