@@ -29,11 +29,13 @@ superthermal electron
 
 ![wkplot](./figures/wkplot.png)
 
-(Figure shows the wk (frequency-wavenumber) plot generated from the output of the above
-mentioned code.)
+(Figure shows the wk (frequency-wavenumber) plot generated from the output)
 
 
 
+## Credits
+      
+This software was develop by Ajay Lotekar ([ablotekar@gmail.com](ablotekar@gmail.com))
+during PhD.
 
-Note: The original code is written in fortran, soon I will upload it
-to GitHub 
+1D fluis simulation code to study the plasma waves in the different plasma environment. 
