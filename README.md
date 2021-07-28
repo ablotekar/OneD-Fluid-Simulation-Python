@@ -35,7 +35,7 @@ superthermal electron
 
 ## Credits
       
-This software was develop by Ajay Lotekar ([ablotekar@gmail.com](ablotekar@gmail.com))
+This software was developed by Ajay Lotekar ([ablotekar@gmail.com](ablotekar@gmail.com))
 during PhD.
 
-1D fluis simulation code to study the plasma waves in the different plasma environment. 
+1D fluid simulation code to study the plasma waves in the different plasma environment. 
