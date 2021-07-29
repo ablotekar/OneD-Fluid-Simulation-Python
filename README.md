@@ -32,10 +32,14 @@ superthermal electron
 (Figure shows the wk (frequency-wavenumber) plot generated from the output)
 
 
+## Note
+This code take huge time for computation. Hence, its not practile to
+use for any research. It has written to understand the algorithm. If user 
+is interested to do fluid simulation please use [fortran version of 1D fluid code.](https://github.com/ablotekar/oneD-fluid-simulation-code-fortran.git)
+
 
 ## Credits
       
-This software was developed by Ajay Lotekar ([ablotekar@gmail.com](ablotekar@gmail.com))
-during PhD.
+This software was developed by Ajay Lotekar ([ablotekar@gmail.com](ablotekar@gmail.com)).
 
 1D fluid simulation code to study the plasma waves in the different plasma environment. 
