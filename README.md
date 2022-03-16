@@ -29,7 +29,7 @@ superthermal electron
 
 ![wkplot](./figures/wkplot.png)
 
-(Figure shows the $\omega$-k (frequency-wavenumber) plot generated from the output)
+(Figure shows the `\omega`-k (frequency-wavenumber) plot generated from the output)
 
 
 ## Note
