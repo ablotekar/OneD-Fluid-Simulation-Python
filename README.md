@@ -33,9 +33,7 @@ superthermal electron
 
 
 ## Note
-This code take huge time for computation. Hence, its not practile to
-use for any research. It has written to understand the algorithm. If user 
-is interested to do fluid simulation please use [fortran version of 1D fluid code.](https://github.com/ablotekar/oneD-fluid-simulation-code-fortran.git)
+This code takes a huge time to compute. Hence, it's not practical to use for any research. It is written to understand the algorithm. If user is interested to do fluid simulation please use [fortran version of 1D fluid code.](https://github.com/ablotekar/oneD-fluid-simulation-code-fortran.git)
 
 
 ## Credits
