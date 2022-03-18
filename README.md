@@ -1,5 +1,3 @@
-https://img.shields.io/github/issues/ablotekar/OneD-Fluid-Simulation-Python
-
 # 1D fluid simulation code (python version)
 
 ## Introduction 
