@@ -1,5 +1,6 @@
 # 1D fluid simulation code (python version)
-[![GitHub issues](https://img.shields.io/github/issues/ablotekar/OneD-Fluid-Simulation-Python)](https://github.com/ablotekar/OneD-Fluid-Simulation-Python/issues)
+[![GitHub license](https://img.shields.io/github/license/ablotekar/OneD-Fluid-Simulation-Python)](https://github.com/ablotekar/OneD-Fluid-Simulation-Python/blob/master/LICENSE.txt)
+[![GitHub issues](https://img.shields.io/github/issues/ablotekar/OneD-Fluid-Simulation-Python)](https://github.com/ablotekar/OneD-Fluid-Simulation-Python/issues)![GitHub all releases](https://img.shields.io/github/downloads/ablotekar/OneD-Fluid-Simulation-Python/total)![GitHub issues](https://img.shields.io/github/issues/ablotekar/OneD-Fluid-Simulation-Python)
 
 ## Introduction 
 It is python version of the 1D fluid simulation code used in the study of 
